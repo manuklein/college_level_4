@@ -1,0 +1,309 @@
+/* Style commun pour le site éducatif 4ème */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Couleurs par matière */
+.bg-accueil { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+.bg-francais { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+.bg-anglais { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.bg-espagnol { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+.bg-svt { background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%); }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+header {
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 40px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-left: 4px solid currentColor;
+    padding-left: 15px;
+}
+
+.h2-francais { color: #e74c3c; border-color: #e74c3c; }
+.h2-anglais { color: #667eea; border-color: #667eea; }
+.h2-espagnol { color: #f39c12; border-color: #f39c12; }
+.h2-svt { color: #27ae60; border-color: #27ae60; }
+
+.section {
+    margin-bottom: 30px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.example {
+    background: #e7f3ff;
+    border-left: 4px solid #2196F3;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.example-main {
+    color: #1976D2;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.example-translation {
+    color: #555;
+    font-style: italic;
+}
+
+.important {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.exercise {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.question {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px 2px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-francais { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+.btn-anglais { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.btn-espagnol { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+.btn-svt { background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%); }
+.btn-neutral { background: linear-gradient(135deg, #6c757d 0%, #495057 100%); }
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.correct {
+    background: #d4edda;
+    color: #155724;
+    border: 2px solid #28a745;
+}
+
+.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+    border: 2px solid #dc3545;
+}
+
+.partial {
+    background: #fff3cd;
+    color: #856404;
+    border: 2px solid #ffc107;
+}
+
+ul {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+.nav-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.nav-home a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.nav-home a:hover {
+    transform: scale(1.05);
+}
+
+/* Cards pour la page d'accueil */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.card-icon {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    border: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Liste des notions */
+.notions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notions-list li {
+    margin: 0;
+}
+
+.notions-list a {
+    display: block;
+    padding: 20px 25px;
+    background: white;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.notions-list a:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.notions-list.francais a:hover { border-color: #e74c3c; color: #e74c3c; }
+.notions-list.anglais a:hover { border-color: #667eea; color: #667eea; }
+.notions-list.espagnol a:hover { border-color: #f39c12; color: #f39c12; }
+.notions-list.svt a:hover { border-color: #27ae60; color: #27ae60; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .cards-container {
+        padding: 20px;
+    }
+
+    .nav-home {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+}

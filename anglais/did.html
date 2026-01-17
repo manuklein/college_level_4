@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'auxiliaire DID - Anglais 4ème</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .nav-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .nav-home a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .nav-home a:hover {
+            transform: scale(1.05);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .example {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .example-en {
+            color: #1976D2;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .example-fr {
+            color: #555;
+            font-style: italic;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .exercise {
+            background: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        .question {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            margin: 5px 2px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        
+        .correct {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #28a745;
+        }
+        
+        .incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #dc3545;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-home">
+        <a href="index.html">⬅ Anglais</a>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+        <header>
+            <h1>📚 L'auxiliaire DID en anglais</h1>
+            <p>Maîtrisez le passé simple en anglais</p>
+        </header>
+        
+        <div class="content">
+            <h2>1. Qu'est-ce que DID ?</h2>
+            <div class="section">
+                <p><strong>DID</strong> est l'auxiliaire du <strong>passé simple</strong> (Simple Past) en anglais. Il s'utilise pour former les phrases négatives et interrogatives au passé.</p>
+                <p style="margin-top: 10px;">DID est la forme passée de DO/DOES et s'utilise avec tous les sujets (I, you, he, she, it, we, they).</p>
+            </div>
+
+            <h2>2. Formation des phrases interrogatives</h2>
+            <div class="section">
+                <p><strong>Structure :</strong> DID + sujet + verbe à l'infinitif + ... ?</p>
+                
+                <div class="example">
+                    <div class="example-en">Did you go to the party yesterday?</div>
+                    <div class="example-fr">Es-tu allé à la fête hier ?</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-en">Did she like the movie?</div>
+                    <div class="example-fr">A-t-elle aimé le film ?</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-en">Did they finish their homework?</div>
+                    <div class="example-fr">Ont-ils terminé leurs devoirs ?</div>
+                </div>
+                
+                <div class="important">
+                    <strong>⚠️ Important :</strong> Quand on utilise DID, le verbe principal reste à l'infinitif (sans TO). On ne met PAS le verbe au passé !
+                </div>
+            </div>
+
+            <h2>3. Formation des phrases négatives</h2>
+            <div class="section">
+                <p><strong>Structure :</strong> Sujet + DID NOT (didn't) + verbe à l'infinitif + ...</p>
+                
+                <div class="example">
+                    <div class="example-en">I didn't see him at school.</div>
+                    <div class="example-fr">Je ne l'ai pas vu à l'école.</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-en">She didn't eat breakfast this morning.</div>
+                    <div class="example-fr">Elle n'a pas pris de petit-déjeuner ce matin.</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-en">We didn't understand the question.</div>
+                    <div class="example-fr">Nous n'avons pas compris la question.</div>
+                </div>
+            </div>
+
+            <h2>4. Réponses courtes</h2>
+            <div class="section">
+                <p>On utilise aussi DID dans les réponses courtes :</p>
+                <ul>
+                    <li><strong>Réponse positive :</strong> Yes, I/you/he/she/it/we/they did.</li>
+                    <li><strong>Réponse négative :</strong> No, I/you/he/she/it/we/they didn't.</li>
+                </ul>
+                
+                <div class="example" style="margin-top: 15px;">
+                    <div class="example-en">Did you call Mary? — Yes, I did. / No, I didn't.</div>
+                    <div class="example-fr">As-tu appelé Mary ? — Oui. / Non.</div>
+                </div>
+            </div>
+
+            <h2>5. Attention aux pièges !</h2>
+            <div class="section">
+                <div class="important">
+                    <strong>❌ Erreur fréquente :</strong><br>
+                    Did you went to school? <strong>(FAUX)</strong><br>
+                    Did you go to school? <strong>(CORRECT)</strong>
+                </div>
+                <p style="margin-top: 15px;">Le verbe "go" ne prend PAS la forme passée "went" car DID indique déjà le passé !</p>
+            </div>
+
+            <h2>6. Permissions et obligations au passé</h2>
+            <div class="section">
+                <p>Pour exprimer les permissions et obligations au passé, on utilise des modaux qui se combinent avec DID dans les formes négatives et interrogatives :</p>
+                
+                <h3>Permission au passé</h3>
+                <p><strong>COULD</strong> = pouvoir (avoir la permission)</p>
+                <div class="example">
+                    <div class="example-en">I could go to the party.</div>
+                    <div class="example-fr">Je pouvais / J'avais le droit d'aller à la fête.</div>
+                </div>
+                <div class="example">
+                    <div class="example-en">Could you watch TV after dinner?</div>
+                    <div class="example-fr">Pouvais-tu regarder la TV après le dîner ?</div>
+                </div>
+                
+                <h3>Obligation au passé</h3>
+                <p><strong>HAD TO</strong> = devoir (obligation)</p>
+                <div class="example">
+                    <div class="example-en">She had to finish her homework.</div>
+                    <div class="example-fr">Elle devait finir ses devoirs.</div>
+                </div>
+                <div class="important" style="margin-top: 15px;">
+                    <strong>⚠️ Attention avec HAD TO :</strong><br>
+                    - Question : <strong>Did</strong> you <strong>have to</strong> work? (Devais-tu travailler ?)<br>
+                    - Négatif : I <strong>didn't have to</strong> work. (Je n'avais pas besoin de travailler.)
+                </div>
+                
+                <h3>Interdiction au passé</h3>
+                <p><strong>COULDN'T / COULD NOT</strong> = ne pas pouvoir (interdiction)</p>
+                <div class="example">
+                    <div class="example-en">We couldn't use our phones in class.</div>
+                    <div class="example-fr">Nous ne pouvions pas utiliser nos téléphones en classe.</div>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 1 : Phrases simples</h2>
+                <p style="margin-bottom: 20px;">Complétez les phrases en ajoutant uniquement les mots manquants.</p>
+                
+                <div class="question">
+                    <strong>1.</strong> <input type="text" id="q1" placeholder="..." style="width: 80px; display: inline-block;"> you <input type="text" id="q1b" placeholder="..." style="width: 100px; display: inline-block;"> (visit) your grandparents last Sunday?
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> He <input type="text" id="q2" placeholder="..." style="width: 120px; display: inline-block;"> (not/study) for the test.
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> <input type="text" id="q3" placeholder="..." style="width: 80px; display: inline-block;"> she <input type="text" id="q3b" placeholder="..." style="width: 100px; display: inline-block;"> (cook) dinner yesterday?
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> They <input type="text" id="q4" placeholder="..." style="width: 120px; display: inline-block;"> (not/hear) the news.
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> <input type="text" id="q5" placeholder="..." style="width: 80px; display: inline-block;"> we <input type="text" id="q5b" placeholder="..." style="width: 100px; display: inline-block;"> (win) the match?
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise()">Recommencer</button>
+                </div>
+                
+                <div id="result"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 2 : Questions avec mots interrogatifs</h2>
+                <p style="margin-bottom: 20px;">Complétez les questions avec le mot interrogatif (What, Where, Why, When, Who, How) + DID + le verbe.</p>
+                
+                <div class="important" style="margin-bottom: 20px;">
+                    <strong>💡 Rappel :</strong> Structure = Mot interrogatif + DID + sujet + verbe infinitif<br>
+                    Exemple : <em>Where did you go?</em> (Où es-tu allé ?)
+                </div>
+                
+                <div class="question">
+                    <strong>1.</strong> <input type="text" id="ex2q1" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex2q1b" placeholder="..." style="width: 70px; display: inline-block;"> you <input type="text" id="ex2q1c" placeholder="..." style="width: 80px; display: inline-block;"> (find) your keys?<br>
+                    <small style="color: #666;">(Où as-tu trouvé tes clés ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> <input type="text" id="ex2q2" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex2q2b" placeholder="..." style="width: 70px; display: inline-block;"> he <input type="text" id="ex2q2c" placeholder="..." style="width: 80px; display: inline-block;"> (cry)?<br>
+                    <small style="color: #666;">(Pourquoi a-t-il pleuré ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> <input type="text" id="ex2q3" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex2q3b" placeholder="..." style="width: 70px; display: inline-block;"> you <input type="text" id="ex2q3c" placeholder="..." style="width: 80px; display: inline-block;"> (buy) at the store?<br>
+                    <small style="color: #666;">(Qu'as-tu acheté au magasin ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> <input type="text" id="ex2q4" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex2q4b" placeholder="..." style="width: 70px; display: inline-block;"> she <input type="text" id="ex2q4c" placeholder="..." style="width: 80px; display: inline-block;"> (talk) to?<br>
+                    <small style="color: #666;">(À qui a-t-elle parlé ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> <input type="text" id="ex2q5" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex2q5b" placeholder="..." style="width: 70px; display: inline-block;"> they <input type="text" id="ex2q5c" placeholder="..." style="width: 80px; display: inline-block;"> (travel) to Paris?<br>
+                    <small style="color: #666;">(Comment ont-ils voyagé à Paris ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>6.</strong> <input type="text" id="ex2q6" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex2q6b" placeholder="..." style="width: 70px; display: inline-block;"> you <input type="text" id="ex2q6c" placeholder="..." style="width: 80px; display: inline-block;"> (arrive) home?<br>
+                    <small style="color: #666;">(Quand es-tu arrivé à la maison ?)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers2()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise2()">Recommencer</button>
+                </div>
+                
+                <div id="result2"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 3 : Mélange - Questions et négations</h2>
+                <p style="margin-bottom: 20px;">Complétez les phrases. Attention, certaines sont des questions avec mots interrogatifs, d'autres avec DID simple, et d'autres des négations !</p>
+                
+                <div class="question">
+                    <strong>1.</strong> <input type="text" id="ex3q1" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex3q1b" placeholder="..." style="width: 70px; display: inline-block;"> she <input type="text" id="ex3q1c" placeholder="..." style="width: 80px; display: inline-block;"> (get) this book?<br>
+                    <small style="color: #666;">(Où a-t-elle obtenu ce livre ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> My brother <input type="text" id="ex3q2" placeholder="..." style="width: 130px; display: inline-block;"> (not/clean) his room.<br>
+                    <small style="color: #666;">(Mon frère n'a pas nettoyé sa chambre.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> <input type="text" id="ex3q3" placeholder="..." style="width: 70px; display: inline-block;"> they <input type="text" id="ex3q3b" placeholder="..." style="width: 80px; display: inline-block;"> (enjoy) the concert?<br>
+                    <small style="color: #666;">(Ont-ils apprécié le concert ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> <input type="text" id="ex3q4" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex3q4b" placeholder="..." style="width: 70px; display: inline-block;"> you <input type="text" id="ex3q4c" placeholder="..." style="width: 80px; display: inline-block;"> (decide) to quit?<br>
+                    <small style="color: #666;">(Pourquoi as-tu décidé d'abandonner ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> We <input type="text" id="ex3q5" placeholder="..." style="width: 130px; display: inline-block;"> (not/receive) your email.<br>
+                    <small style="color: #666;">(Nous n'avons pas reçu votre email.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>6.</strong> <input type="text" id="ex3q6" placeholder="..." style="width: 90px; display: inline-block;"> <input type="text" id="ex3q6b" placeholder="..." style="width: 70px; display: inline-block;"> he <input type="text" id="ex3q6c" placeholder="..." style="width: 80px; display: inline-block;"> (say) to you?<br>
+                    <small style="color: #666;">(Que t'a-t-il dit ?)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers3()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise3()">Recommencer</button>
+                </div>
+                
+                <div id="result3"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 4 : Permissions et obligations au passé</h2>
+                <p style="margin-bottom: 20px;">Complétez avec COULD, COULDN'T, HAD TO, ou DIDN'T HAVE TO.</p>
+                
+                <div class="important" style="margin-bottom: 20px;">
+                    <strong>💡 Rappel :</strong><br>
+                    • COULD = pouvoir (permission)<br>
+                    • COULDN'T = ne pas pouvoir (interdiction)<br>
+                    • HAD TO = devoir (obligation)<br>
+                    • DIDN'T HAVE TO = ne pas avoir besoin de
+                </div>
+                
+                <div class="question">
+                    <strong>1.</strong> Last year, students <input type="text" id="ex4q1" placeholder="..." style="width: 150px; display: inline-block;"> wear a uniform at school.<br>
+                    <small style="color: #666;">(L'année dernière, les élèves devaient porter un uniforme à l'école.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> When I was sick, I <input type="text" id="ex4q2" placeholder="..." style="width: 150px; display: inline-block;"> eat anything.<br>
+                    <small style="color: #666;">(Quand j'étais malade, je ne pouvais rien manger.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> She <input type="text" id="ex4q3" placeholder="..." style="width: 170px; display: inline-block;"> work on Sunday, so she stayed home.<br>
+                    <small style="color: #666;">(Elle n'avait pas besoin de travailler dimanche, alors elle est restée à la maison.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> <input type="text" id="ex4q4" placeholder="..." style="width: 80px; display: inline-block;"> you <input type="text" id="ex4q4b" placeholder="..." style="width: 120px; display: inline-block;"> study last night?<br>
+                    <small style="color: #666;">(As-tu dû étudier hier soir ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> At the museum, visitors <input type="text" id="ex4q5" placeholder="..." style="width: 150px; display: inline-block;"> take photos.<br>
+                    <small style="color: #666;">(Au musée, les visiteurs ne pouvaient pas prendre de photos.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>6.</strong> In the past, people <input type="text" id="ex4q6" placeholder="..." style="width: 150px; display: inline-block;"> send letters to communicate.<br>
+                    <small style="color: #666;">(Avant, les gens devaient envoyer des lettres pour communiquer.)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers4()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise4()">Recommencer</button>
+                </div>
+                
+                <div id="result4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers = {
+            q1: 'did',
+            q1b: 'visit',
+            q2: 'didn\'t study',
+            q3: 'did',
+            q3b: 'cook',
+            q4: 'didn\'t hear',
+            q5: 'did',
+            q5b: 'win'
+        };
+
+        const answers2 = {
+            ex2q1: 'where',
+            ex2q1b: 'did',
+            ex2q1c: 'find',
+            ex2q2: 'why',
+            ex2q2b: 'did',
+            ex2q2c: 'cry',
+            ex2q3: 'what',
+            ex2q3b: 'did',
+            ex2q3c: 'buy',
+            ex2q4: 'who',
+            ex2q4b: 'did',
+            ex2q4c: 'talk',
+            ex2q5: 'how',
+            ex2q5b: 'did',
+            ex2q5c: 'travel',
+            ex2q6: 'when',
+            ex2q6b: 'did',
+            ex2q6c: 'arrive'
+        };
+
+        const answers3 = {
+            ex3q1: 'where',
+            ex3q1b: 'did',
+            ex3q1c: 'get',
+            ex3q2: 'didn\'t clean',
+            ex3q3: 'did',
+            ex3q3b: 'enjoy',
+            ex3q4: 'why',
+            ex3q4b: 'did',
+            ex3q4c: 'decide',
+            ex3q5: 'didn\'t receive',
+            ex3q6: 'what',
+            ex3q6b: 'did',
+            ex3q6c: 'say'
+        };
+
+        const answers4 = {
+            ex4q1: 'had to',
+            ex4q2: 'couldn\'t',
+            ex4q3: 'didn\'t have to',
+            ex4q4: 'did',
+            ex4q4b: 'have to',
+            ex4q5: 'couldn\'t',
+            ex4q6: 'had to'
+        };
+
+        function normalize(str) {
+            return str.toLowerCase().trim().replace(/\s+/g, ' ');
+        }
+
+        function checkAnswers() {
+            let score = 0;
+            let total = 8;
+
+            const inputs = ['q1', 'q1b', 'q2', 'q3', 'q3b', 'q4', 'q5', 'q5b'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers[id]);
+                
+                if (userAnswer === correctAnswer || 
+                    (id === 'q2' && userAnswer === 'did not study') || 
+                    (id === 'q4' && userAnswer === 'did not hear')) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Parfait ! ' + score + '/' + total + ' - Vous maîtrisez DID !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 Bien ! ' + score + '/' + total + ' - Continuez à pratiquer !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Relisez le cours et réessayez !';
+            }
+        }
+
+        function resetExercise() {
+            const inputs = ['q1', 'q1b', 'q2', 'q3', 'q3b', 'q4', 'q5', 'q5b'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result').innerHTML = '';
+        }
+
+        function checkAnswers2() {
+            let score = 0;
+            let total = 18;
+
+            const inputs = ['ex2q1', 'ex2q1b', 'ex2q1c', 'ex2q2', 'ex2q2b', 'ex2q2c', 'ex2q3', 'ex2q3b', 'ex2q3c', 'ex2q4', 'ex2q4b', 'ex2q4c', 'ex2q5', 'ex2q5b', 'ex2q5c', 'ex2q6', 'ex2q6b', 'ex2q6c'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers2[id]);
+                
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result2');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Excellent ! ' + score + '/' + total + ' - Vous maîtrisez les questions avec DID !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 Pas mal ! ' + score + '/' + total + ' - Continuez vos efforts !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - N\'oubliez pas : Mot interrogatif + DID + sujet + verbe infinitif !';
+            }
+        }
+
+        function resetExercise2() {
+            const inputs = ['ex2q1', 'ex2q1b', 'ex2q1c', 'ex2q2', 'ex2q2b', 'ex2q2c', 'ex2q3', 'ex2q3b', 'ex2q3c', 'ex2q4', 'ex2q4b', 'ex2q4c', 'ex2q5', 'ex2q5b', 'ex2q5c', 'ex2q6', 'ex2q6b', 'ex2q6c'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result2').innerHTML = '';
+        }
+
+        function checkAnswers3() {
+            let score = 0;
+            const inputs = ['ex3q1', 'ex3q1b', 'ex3q1c', 'ex3q2', 'ex3q3', 'ex3q3b', 'ex3q4', 'ex3q4b', 'ex3q4c', 'ex3q5', 'ex3q6', 'ex3q6b', 'ex3q6c'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers3[id]);
+                
+                if (userAnswer === correctAnswer || 
+                    (id === 'ex3q2' && userAnswer === 'did not clean') ||
+                    (id === 'ex3q5' && userAnswer === 'did not receive')) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const total = inputs.length;
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result3');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Bravo ! ' + score + '/' + total + ' - Vous maîtrisez tout !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 Bien joué ! ' + score + '/' + total + ' - Encore un petit effort !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Relisez les explications et réessayez !';
+            }
+        }
+
+        function resetExercise3() {
+            const inputs = ['ex3q1', 'ex3q1b', 'ex3q1c', 'ex3q2', 'ex3q3', 'ex3q3b', 'ex3q4', 'ex3q4b', 'ex3q4c', 'ex3q5', 'ex3q6', 'ex3q6b', 'ex3q6c'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result3').innerHTML = '';
+        }
+
+        function checkAnswers4() {
+            let score = 0;
+            const inputs = ['ex4q1', 'ex4q2', 'ex4q3', 'ex4q4', 'ex4q4b', 'ex4q5', 'ex4q6'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers4[id]);
+                
+                if (userAnswer === correctAnswer || 
+                    (id === 'ex4q2' && userAnswer === 'could not') ||
+                    (id === 'ex4q3' && userAnswer === 'did not have to') ||
+                    (id === 'ex4q5' && userAnswer === 'could not')) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const total = inputs.length;
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result4');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Parfait ! ' + score + '/' + total + ' - Les modaux au passé n\'ont plus de secret pour vous !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 Bien ! ' + score + '/' + total + ' - Relisez la partie sur les modaux !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Revoyez COULD, COULDN\'T, HAD TO et DIDN\'T HAVE TO !';
+            }
+        }
+
+        function resetExercise4() {
+            const inputs = ['ex4q1', 'ex4q2', 'ex4q3', 'ex4q4', 'ex4q4b', 'ex4q5', 'ex4q6'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result4').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

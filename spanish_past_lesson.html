@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours d'espagnol - Passé composé et Gérondif</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        h2 {
+            color: #f5576c;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-left: 4px solid #f5576c;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #f093fb;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .example {
+            background: #ffe7f0;
+            border-left: 4px solid #f5576c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .example-es {
+            color: #c41e3a;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .example-fr {
+            color: #555;
+            font-style: italic;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .comparison {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .exercise {
+            background: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        .question {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            margin: 5px 2px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #f5576c;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        
+        .correct {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #28a745;
+        }
+        
+        .incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #dc3545;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #f093fb;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇪🇸 Le Passé composé et le Gérondif en espagnol</h1>
+            <p>Maîtrisez les temps du passé et les formes verbales</p>
+        </header>
+        
+        <div class="content">
+            <h2>1. Le Passé composé (Pretérito Perfecto)</h2>
+            <div class="section">
+                <p>Le passé composé en espagnol exprime une action passée qui a encore un lien avec le présent ou qui s'est produite dans une période de temps non terminée.</p>
+                
+                <h3>Formation : HABER (auxiliaire) + Participe passé</h3>
+                
+                <table>
+                    <tr>
+                        <th>Pronom</th>
+                        <th>HABER</th>
+                        <th>Exemple</th>
+                    </tr>
+                    <tr>
+                        <td>Yo</td>
+                        <td>he</td>
+                        <td>he comido (j'ai mangé)</td>
+                    </tr>
+                    <tr>
+                        <td>Tú</td>
+                        <td>has</td>
+                        <td>has vivido (tu as vécu)</td>
+                    </tr>
+                    <tr>
+                        <td>Él/Ella/Usted</td>
+                        <td>ha</td>
+                        <td>ha hablado (il/elle a parlé)</td>
+                    </tr>
+                    <tr>
+                        <td>Nosotros/as</td>
+                        <td>hemos</td>
+                        <td>hemos salido (nous sommes sortis)</td>
+                    </tr>
+                    <tr>
+                        <td>Vosotros/as</td>
+                        <td>habéis</td>
+                        <td>habéis visto (vous avez vu)</td>
+                    </tr>
+                    <tr>
+                        <td>Ellos/Ellas/Ustedes</td>
+                        <td>han</td>
+                        <td>han escrito (ils/elles ont écrit)</td>
+                    </tr>
+                </table>
+                
+                <h3>Formation du participe passé :</h3>
+                <ul>
+                    <li><strong>Verbes en -AR :</strong> -ado → hablar → <strong>hablado</strong></li>
+                    <li><strong>Verbes en -ER :</strong> -ido → comer → <strong>comido</strong></li>
+                    <li><strong>Verbes en -IR :</strong> -ido → vivir → <strong>vivido</strong></li>
+                </ul>
+                
+                <div class="important">
+                    <strong>⚠️ Participes passés irréguliers courants :</strong><br>
+                    • hacer → <strong>hecho</strong> (fait)<br>
+                    • ver → <strong>visto</strong> (vu)<br>
+                    • escribir → <strong>escrito</strong> (écrit)<br>
+                    • abrir → <strong>abierto</strong> (ouvert)<br>
+                    • decir → <strong>dicho</strong> (dit)<br>
+                    • poner → <strong>puesto</strong> (mis)<br>
+                    • volver → <strong>vuelto</strong> (retourné)
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">He comido paella hoy.</div>
+                    <div class="example-fr">J'ai mangé de la paella aujourd'hui.</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">¿Has visto la película?</div>
+                    <div class="example-fr">As-tu vu le film ?</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">Ellos han llegado esta mañana.</div>
+                    <div class="example-fr">Ils sont arrivés ce matin.</div>
+                </div>
+            </div>
+
+            <h2>2. Le Gérondif avec ESTAR (Gerundio)</h2>
+            <div class="section">
+                <p>Le gérondif avec ESTAR exprime une action en train de se dérouler. Il équivaut à "être en train de" en français.</p>
+                
+                <h3>Conjugaison de ESTAR (présent) :</h3>
+                <table>
+                    <tr>
+                        <th>Pronom</th>
+                        <th>ESTAR</th>
+                        <th>Exemple</th>
+                    </tr>
+                    <tr>
+                        <td>Yo</td>
+                        <td>estoy</td>
+                        <td>estoy hablando (je suis en train de parler)</td>
+                    </tr>
+                    <tr>
+                        <td>Tú</td>
+                        <td>estás</td>
+                        <td>estás comiendo (tu es en train de manger)</td>
+                    </tr>
+                    <tr>
+                        <td>Él/Ella/Usted</td>
+                        <td>está</td>
+                        <td>está viviendo (il/elle est en train de vivre)</td>
+                    </tr>
+                    <tr>
+                        <td>Nosotros/as</td>
+                        <td>estamos</td>
+                        <td>estamos estudiando (nous sommes en train d'étudier)</td>
+                    </tr>
+                    <tr>
+                        <td>Vosotros/as</td>
+                        <td>estáis</td>
+                        <td>estáis trabajando (vous êtes en train de travailler)</td>
+                    </tr>
+                    <tr>
+                        <td>Ellos/Ellas/Ustedes</td>
+                        <td>están</td>
+                        <td>están bailando (ils/elles sont en train de danser)</td>
+                    </tr>
+                </table>
+                
+                <h3>Formation du gérondif :</h3>
+                <ul>
+                    <li><strong>Verbes en -AR :</strong> -ando → hablar → <strong>hablando</strong> (parlant)</li>
+                    <li><strong>Verbes en -ER :</strong> -iendo → comer → <strong>comiendo</strong> (mangeant)</li>
+                    <li><strong>Verbes en -IR :</strong> -iendo → vivir → <strong>viviendo</strong> (vivant)</li>
+                </ul>
+                
+                <div class="important">
+                    <strong>⚠️ Gérondifs irréguliers courants :</strong><br>
+                    • ir → <strong>yendo</strong> (allant)<br>
+                    • leer → <strong>leyendo</strong> (lisant)<br>
+                    • dormir → <strong>durmiendo</strong> (dormant)<br>
+                    • pedir → <strong>pidiendo</strong> (demandant)<br>
+                    • decir → <strong>diciendo</strong> (disant)<br>
+                    • venir → <strong>viniendo</strong> (venant)
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">Estoy estudiando español.</div>
+                    <div class="example-fr">Je suis en train d'étudier l'espagnol.</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">Están comiendo en el restaurante.</div>
+                    <div class="example-fr">Ils sont en train de manger au restaurant.</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">¿Estás leyendo el libro?</div>
+                    <div class="example-fr">Es-tu en train de lire le livre ?</div>
+                </div>
+            </div>
+
+            <h2>3. Différences clés : Passé composé vs Gérondif</h2>
+            <div class="section">
+                <div class="comparison">
+                    <strong>📌 PASSÉ COMPOSÉ (Pretérito Perfecto)</strong><br>
+                    • Action terminée dans le passé<br>
+                    • Résultat ou conséquence visible<br>
+                    • Structure : HABER + participe passé<br>
+                    • Exemple : <em>He comido</em> = J'ai mangé (action terminée)
+                </div>
+                
+                <div class="comparison">
+                    <strong>📌 GÉRONDIF avec ESTAR</strong><br>
+                    • Action en cours de déroulement<br>
+                    • Action continue au moment présent<br>
+                    • Structure : ESTAR + gérondif<br>
+                    • Exemple : <em>Estoy comiendo</em> = Je suis en train de manger (action en cours)
+                </div>
+                
+                <h3>Comparaison directe :</h3>
+                <table>
+                    <tr>
+                        <th>Passé composé</th>
+                        <th>Gérondif avec ESTAR</th>
+                    </tr>
+                    <tr>
+                        <td>He estudiado mucho. (J'ai beaucoup étudié)</td>
+                        <td>Estoy estudiando ahora. (J'étudie maintenant)</td>
+                    </tr>
+                    <tr>
+                        <td>Has hecho los deberes. (Tu as fait les devoirs)</td>
+                        <td>Estás haciendo los deberes. (Tu es en train de faire les devoirs)</td>
+                    </tr>
+                    <tr>
+                        <td>Hemos viajado a España. (Nous avons voyagé en Espagne)</td>
+                        <td>Estamos viajando a España. (Nous sommes en train de voyager en Espagne)</td>
+                    </tr>
+                    <tr>
+                        <td>Han terminado el proyecto. (Ils ont terminé le projet)</td>
+                        <td>Están terminando el proyecto. (Ils sont en train de terminer le projet)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>4. Le Gérondif au passé</h2>
+            <div class="section">
+                <p>On peut aussi utiliser le gérondif au passé avec l'imparfait de ESTAR (estaba, estabas, estaba, estábamos, estabais, estaban) :</p>
+                
+                <div class="example">
+                    <div class="example-es">Estaba leyendo cuando llegaste.</div>
+                    <div class="example-fr">J'étais en train de lire quand tu es arrivé.</div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-es">Estaban bailando en la fiesta.</div>
+                    <div class="example-fr">Ils étaient en train de danser à la fête.</div>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 1 : Formation du passé composé</h2>
+                <p style="margin-bottom: 20px;">Complétez avec la forme correcte de HABER et le participe passé.</p>
+                
+                <div class="question">
+                    <strong>1.</strong> Yo <input type="text" id="q1" placeholder="..." style="width: 80px;"> <input type="text" id="q1b" placeholder="..." style="width: 100px;"> (hablar) con María.<br>
+                    <small style="color: #666;">(J'ai parlé avec María.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> Tú <input type="text" id="q2" placeholder="..." style="width: 80px;"> <input type="text" id="q2b" placeholder="..." style="width: 100px;"> (comer) en ese restaurante.<br>
+                    <small style="color: #666;">(Tu as mangé dans ce restaurant.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> Nosotros <input type="text" id="q3" placeholder="..." style="width: 80px;"> <input type="text" id="q3b" placeholder="..." style="width: 100px;"> (vivir) en Madrid.<br>
+                    <small style="color: #666;">(Nous avons vécu à Madrid.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> Ellos <input type="text" id="q4" placeholder="..." style="width: 80px;"> <input type="text" id="q4b" placeholder="..." style="width: 100px;"> (hacer) los deberes.<br>
+                    <small style="color: #666;">(Ils ont fait les devoirs.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> Ella <input type="text" id="q5" placeholder="..." style="width: 80px;"> <input type="text" id="q5b" placeholder="..." style="width: 100px;"> (ver) la película.<br>
+                    <small style="color: #666;">(Elle a vu le film.)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers1()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise1()">Recommencer</button>
+                </div>
+                
+                <div id="result1"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 2 : Formation du gérondif avec ESTAR</h2>
+                <p style="margin-bottom: 20px;">Complétez avec ESTAR au présent et le gérondif.</p>
+                
+                <div class="question">
+                    <strong>1.</strong> Yo <input type="text" id="ex2q1" placeholder="..." style="width: 80px;"> <input type="text" id="ex2q1b" placeholder="..." style="width: 120px;"> (estudiar) español.<br>
+                    <small style="color: #666;">(Je suis en train d'étudier l'espagnol.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> Tú <input type="text" id="ex2q2" placeholder="..." style="width: 80px;"> <input type="text" id="ex2q2b" placeholder="..." style="width: 120px;"> (leer) un libro.<br>
+                    <small style="color: #666;">(Tu es en train de lire un livre.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> Ellos <input type="text" id="ex2q3" placeholder="..." style="width: 80px;"> <input type="text" id="ex2q3b" placeholder="..." style="width: 120px;"> (dormir).<br>
+                    <small style="color: #666;">(Ils sont en train de dormir.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> Nosotras <input type="text" id="ex2q4" placeholder="..." style="width: 90px;"> <input type="text" id="ex2q4b" placeholder="..." style="width: 120px;"> (bailar).<br>
+                    <small style="color: #666;">(Nous sommes en train de danser.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> Él <input type="text" id="ex2q5" placeholder="..." style="width: 80px;"> <input type="text" id="ex2q5b" placeholder="..." style="width: 120px;"> (escribir) un mensaje.<br>
+                    <small style="color: #666;">(Il est en train d'écrire un message.)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers2()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise2()">Recommencer</button>
+                </div>
+                
+                <div id="result2"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 3 : Passé composé ou Gérondif ?</h2>
+                <p style="margin-bottom: 20px;">Choisissez la bonne forme selon le contexte.</p>
+                
+                <div class="question">
+                    <strong>1.</strong> Nosotros <input type="text" id="ex3q1" placeholder="..." style="width: 90px;"> <input type="text" id="ex3q1b" placeholder="..." style="width: 120px;"> (trabajar) en este proyecto ahora mismo.<br>
+                    <small style="color: #666;">(Nous sommes en train de travailler sur ce projet en ce moment.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> Yo <input type="text" id="ex3q2" placeholder="..." style="width: 90px;"> <input type="text" id="ex3q2b" placeholder="..." style="width: 120px;"> (terminar) mis deberes esta tarde.<br>
+                    <small style="color: #666;">(J'ai terminé mes devoirs cet après-midi.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> Ellas <input type="text" id="ex3q3" placeholder="..." style="width: 90px;"> <input type="text" id="ex3q3b" placeholder="..." style="width: 120px;"> (cantar) en la ducha.<br>
+                    <small style="color: #666;">(Elles sont en train de chanter sous la douche.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> ¿Tú <input type="text" id="ex3q4" placeholder="..." style="width: 90px;"> <input type="text" id="ex3q4b" placeholder="..." style="width: 120px;"> (visitar) el museo hoy?<br>
+                    <small style="color: #666;">(As-tu visité le musée aujourd'hui ?)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> Mi hermano <input type="text" id="ex3q5" placeholder="..." style="width: 90px;"> <input type="text" id="ex3q5b" placeholder="..." style="width: 120px;"> (cocinar) la cena ahora.<br>
+                    <small style="color: #666;">(Mon frère est en train de préparer le dîner maintenant.)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers3()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise3()">Recommencer</button>
+                </div>
+                
+                <div id="result3"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 4 : Gérondif au passé</h2>
+                <p style="margin-bottom: 20px;">Complétez avec ESTAR à l'imparfait (estaba, estabas, estaba, estábamos, estabais, estaban) et le gérondif.</p>
+                
+                <div class="question">
+                    <strong>1.</strong> Yo <input type="text" id="ex4q1" placeholder="..." style="width: 90px;"> <input type="text" id="ex4q1b" placeholder="..." style="width: 120px;"> (ver) la televisión cuando llamaste.<br>
+                    <small style="color: #666;">(J'étais en train de regarder la télévision quand tu as appelé.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>2.</strong> Ellos <input type="text" id="ex4q2" placeholder="..." style="width: 90px;"> <input type="text" id="ex4q2b" placeholder="..." style="width: 120px;"> (jugar) al fútbol ayer.<br>
+                    <small style="color: #666;">(Ils étaient en train de jouer au foot hier.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>3.</strong> Nosotros <input type="text" id="ex4q3" placeholder="..." style="width: 100px;"> <input type="text" id="ex4q3b" placeholder="..." style="width: 120px;"> (hablar) de ti.<br>
+                    <small style="color: #666;">(Nous étions en train de parler de toi.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>4.</strong> Tú <input type="text" id="ex4q4" placeholder="..." style="width: 90px;"> <input type="text" id="ex4q4b" placeholder="..." style="width: 120px;"> (correr) en el parque.<br>
+                    <small style="color: #666;">(Tu étais en train de courir dans le parc.)</small>
+                </div>
+                
+                <div class="question">
+                    <strong>5.</strong> Ella <input type="text" id="ex4q5" placeholder="..." style="width: 90px;"> <input type="text" id="ex4q5b" placeholder="..." style="width: 120px;"> (pensar) en su familia.<br>
+                    <small style="color: #666;">(Elle était en train de penser à sa famille.)</small>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers4()">Vérifier mes réponses</button>
+                    <button onclick="resetExercise4()">Recommencer</button>
+                </div>
+                
+                <div id="result4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers1 = {
+            q1: 'he',
+            q1b: 'hablado',
+            q2: 'has',
+            q2b: 'comido',
+            q3: 'hemos',
+            q3b: 'vivido',
+            q4: 'han',
+            q4b: 'hecho',
+            q5: 'ha',
+            q5b: 'visto'
+        };
+
+        const answers2 = {
+            ex2q1: 'estoy',
+            ex2q1b: 'estudiando',
+            ex2q2: 'estás',
+            ex2q2b: 'leyendo',
+            ex2q3: 'están',
+            ex2q3b: 'durmiendo',
+            ex2q4: 'estamos',
+            ex2q4b: 'bailando',
+            ex2q5: 'está',
+            ex2q5b: 'escribiendo'
+        };
+
+        const answers3 = {
+            ex3q1: 'estamos',
+            ex3q1b: 'trabajando',
+            ex3q2: 'he',
+            ex3q2b: 'terminado',
+            ex3q3: 'están',
+            ex3q3b: 'cantando',
+            ex3q4: 'has',
+            ex3q4b: 'visitado',
+            ex3q5: 'está',
+            ex3q5b: 'cocinando'
+        };
+
+        const answers4 = {
+            ex4q1: 'estaba',
+            ex4q1b: 'viendo',
+            ex4q2: 'estaban',
+            ex4q2b: 'jugando',
+            ex4q3: 'estábamos',
+            ex4q3b: 'hablando',
+            ex4q4: 'estabas',
+            ex4q4b: 'corriendo',
+            ex4q5: 'estaba',
+            ex4q5b: 'pensando'
+        };
+
+        function normalize(str) {
+            return str.toLowerCase().trim().replace(/\s+/g, ' ');
+        }
+
+        function checkAnswers1() {
+            let score = 0;
+            const inputs = ['q1', 'q1b', 'q2', 'q2b', 'q3', 'q3b', 'q4', 'q4b', 'q5', 'q5b'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers1[id]);
+                
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const total = inputs.length;
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result1');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 ¡Perfecto! ' + score + '/' + total + ' - Vous maîtrisez le passé composé !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 ¡Bien! ' + score + '/' + total + ' - Continuez à pratiquer !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Relisez la conjugaison de HABER !';
+            }
+        }
+
+        function resetExercise1() {
+            const inputs = ['q1', 'q1b', 'q2', 'q2b', 'q3', 'q3b', 'q4', 'q4b', 'q5', 'q5b'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result1').innerHTML = '';
+        }
+
+        function checkAnswers2() {
+            let score = 0;
+            const inputs = ['ex2q1', 'ex2q1b', 'ex2q2', 'ex2q2b', 'ex2q3', 'ex2q3b', 'ex2q4', 'ex2q4b', 'ex2q5', 'ex2q5b'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers2[id]);
+                
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const total = inputs.length;
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result2');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 ¡Excelente! ' + score + '/' + total + ' - Vous maîtrisez le gérondif !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 ¡Muy bien! ' + score + '/' + total + ' - Encore un effort !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Revoyez ESTAR et les terminaisons du gérondif !';
+            }
+        }
+
+        function resetExercise2() {
+            const inputs = ['ex2q1', 'ex2q1b', 'ex2q2', 'ex2q2b', 'ex2q3', 'ex2q3b', 'ex2q4', 'ex2q4b', 'ex2q5', 'ex2q5b'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result2').innerHTML = '';
+        }
+
+        function checkAnswers3() {
+            let score = 0;
+            const inputs = ['ex3q1', 'ex3q1b', 'ex3q2', 'ex3q2b', 'ex3q3', 'ex3q3b', 'ex3q4', 'ex3q4b', 'ex3q5', 'ex3q5b'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers3[id]);
+                
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const total = inputs.length;
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result3');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 ¡Fantástico! ' + score + '/' + total + ' - Vous savez faire la différence !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 ¡Bien! ' + score + '/' + total + ' - Attention aux contextes !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Action terminée = passé composé, action en cours = gérondif !';
+            }
+        }
+
+        function resetExercise3() {
+            const inputs = ['ex3q1', 'ex3q1b', 'ex3q2', 'ex3q2b', 'ex3q3', 'ex3q3b', 'ex3q4', 'ex3q4b', 'ex3q5', 'ex3q5b'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result3').innerHTML = '';
+        }
+
+        function checkAnswers4() {
+            let score = 0;
+            const inputs = ['ex4q1', 'ex4q1b', 'ex4q2', 'ex4q2b', 'ex4q3', 'ex4q3b', 'ex4q4', 'ex4q4b', 'ex4q5', 'ex4q5b'];
+            
+            inputs.forEach(id => {
+                const userAnswer = normalize(document.getElementById(id).value);
+                const correctAnswer = normalize(answers4[id]);
+                
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    document.getElementById(id).style.borderColor = '#28a745';
+                } else {
+                    document.getElementById(id).style.borderColor = '#dc3545';
+                }
+            });
+
+            const total = inputs.length;
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById('result4');
+            
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 ¡Perfecto! ' + score + '/' + total + ' - Le gérondif au passé n\'a plus de secret !';
+            } else if (percentage >= 60) {
+                resultDiv.className = 'result';
+                resultDiv.style.background = '#fff3cd';
+                resultDiv.style.color = '#856404';
+                resultDiv.style.border = '2px solid #ffc107';
+                resultDiv.innerHTML = '👍 ¡Bien! ' + score + '/' + total + ' - Vérifiez l\'imparfait de ESTAR !';
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Revoyez l\'imparfait : estaba, estabas, estaba...';
+            }
+        }
+
+        function resetExercise4() {
+            const inputs = ['ex4q1', 'ex4q1b', 'ex4q2', 'ex4q2b', 'ex4q3', 'ex4q3b', 'ex4q4', 'ex4q4b', 'ex4q5', 'ex4q5b'];
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            });
+            document.getElementById('result4').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

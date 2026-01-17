@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours 4ème - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card-francais { border-top: 5px solid #e74c3c; }
+        .card-anglais { border-top: 5px solid #667eea; }
+        .card-espagnol { border-top: 5px solid #f39c12; }
+        .card-svt { border-top: 5px solid #27ae60; }
+
+        .card-francais:hover { background: linear-gradient(to bottom, #fdf2f2, white); }
+        .card-anglais:hover { background: linear-gradient(to bottom, #f0f3ff, white); }
+        .card-espagnol:hover { background: linear-gradient(to bottom, #fef9e7, white); }
+        .card-svt:hover { background: linear-gradient(to bottom, #e8f8f0, white); }
+
+        .card-francais h2 { color: #e74c3c; }
+        .card-anglais h2 { color: #667eea; }
+        .card-espagnol h2 { color: #f39c12; }
+        .card-svt h2 { color: #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>📚 Mes Cours de 4ème</h1>
+        <p>Bienvenue ! Choisis une matière pour commencer à réviser.</p>
+    </div>
+
+    <div class="cards-container">
+        <a href="francais/index.html" class="card card-francais">
+            <div class="card-icon">📖</div>
+            <h2>Français</h2>
+            <p>Grammaire, conjugaison, figures de style et analyse de texte</p>
+        </a>
+
+        <a href="anglais/index.html" class="card card-anglais">
+            <div class="card-icon">🇬🇧</div>
+            <h2>Anglais</h2>
+            <p>Grammaire, temps verbaux, vocabulaire et expressions</p>
+        </a>
+
+        <a href="espagnol/index.html" class="card card-espagnol">
+            <div class="card-icon">🇪🇸</div>
+            <h2>Espagnol</h2>
+            <p>Conjugaison, grammaire et vocabulaire espagnol</p>
+        </a>
+
+        <a href="svt/index.html" class="card card-svt">
+            <div class="card-icon">🌿</div>
+            <h2>SVT</h2>
+            <p>Sciences de la Vie et de la Terre</p>
+        </a>
+    </div>
+</body>
+</html>
