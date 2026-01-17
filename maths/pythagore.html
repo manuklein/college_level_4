@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorème de Pythagore - Maths 4ème</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            padding: 20px;
+        }
+        h2 { color: #3498db; border-color: #3498db; }
+        h3 { color: #2980b9; }
+        button { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+        .formula {
+            background: #e8f4fc;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.4em;
+        }
+        .formula-main {
+            color: #2980b9;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .triangle-demo {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-home">
+        <a href="index.html">⬅ Maths</a>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+        <header class="bg-maths">
+            <h1>📐 Le Théorème de Pythagore</h1>
+            <p>Calculer les longueurs dans un triangle rectangle</p>
+        </header>
+
+        <div class="content">
+            <h2>1. Qu'est-ce qu'un triangle rectangle ?</h2>
+            <div class="section">
+                <p>Un <strong>triangle rectangle</strong> est un triangle qui possède un <strong>angle droit</strong> (90°).</p>
+                <ul>
+                    <li>L'<strong>hypoténuse</strong> est le côté opposé à l'angle droit (le plus long côté)</li>
+                    <li>Les deux autres côtés sont appelés <strong>côtés de l'angle droit</strong> (ou cathètes)</li>
+                </ul>
+            </div>
+
+            <h2>2. L'énoncé du théorème</h2>
+            <div class="section">
+                <div class="important">
+                    <strong>Théorème de Pythagore :</strong><br>
+                    Dans un triangle rectangle, le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés.
+                </div>
+
+                <div class="formula">
+                    Si ABC est rectangle en A, alors :<br><br>
+                    <span class="formula-main">BC² = AB² + AC²</span>
+                </div>
+
+                <p style="text-align: center; color: #666;">
+                    (hypoténuse)² = (côté 1)² + (côté 2)²
+                </p>
+            </div>
+
+            <h2>3. Calculer l'hypoténuse</h2>
+            <div class="section">
+                <p><strong>Problème :</strong> Trouver la longueur de l'hypoténuse quand on connaît les deux autres côtés.</p>
+
+                <div class="example">
+                    <div class="example-main">Exemple : Triangle ABC rectangle en A avec AB = 3 cm et AC = 4 cm</div>
+                    <p style="margin-top: 10px;">
+                        D'après le théorème de Pythagore :<br>
+                        BC² = AB² + AC²<br>
+                        BC² = 3² + 4²<br>
+                        BC² = 9 + 16<br>
+                        BC² = 25<br>
+                        BC = √25 = <strong>5 cm</strong>
+                    </p>
+                </div>
+
+                <div class="important">
+                    <strong>💡 Méthode :</strong><br>
+                    1. Écrire la formule<br>
+                    2. Remplacer par les valeurs connues<br>
+                    3. Calculer les carrés<br>
+                    4. Additionner<br>
+                    5. Prendre la racine carrée
+                </div>
+            </div>
+
+            <h2>4. Calculer un côté de l'angle droit</h2>
+            <div class="section">
+                <p><strong>Problème :</strong> Trouver un côté quand on connaît l'hypoténuse et l'autre côté.</p>
+
+                <div class="example">
+                    <div class="example-main">Exemple : Triangle ABC rectangle en A avec BC = 13 cm et AB = 5 cm</div>
+                    <p style="margin-top: 10px;">
+                        D'après le théorème de Pythagore :<br>
+                        BC² = AB² + AC²<br>
+                        13² = 5² + AC²<br>
+                        169 = 25 + AC²<br>
+                        AC² = 169 - 25<br>
+                        AC² = 144<br>
+                        AC = √144 = <strong>12 cm</strong>
+                    </p>
+                </div>
+
+                <div class="formula">
+                    <span class="formula-main">AC² = BC² - AB²</span><br><br>
+                    (côté cherché)² = (hypoténuse)² - (autre côté)²
+                </div>
+            </div>
+
+            <h2>5. Les triplets pythagoriciens</h2>
+            <div class="section">
+                <p>Ce sont des ensembles de 3 nombres entiers qui vérifient le théorème. Les plus connus :</p>
+                <ul>
+                    <li><strong>3, 4, 5</strong> (3² + 4² = 9 + 16 = 25 = 5²)</li>
+                    <li><strong>5, 12, 13</strong> (5² + 12² = 25 + 144 = 169 = 13²)</li>
+                    <li><strong>6, 8, 10</strong> (multiple de 3, 4, 5)</li>
+                    <li><strong>8, 15, 17</strong></li>
+                </ul>
+            </div>
+
+            <h2>6. La réciproque du théorème</h2>
+            <div class="section">
+                <div class="important">
+                    <strong>Réciproque :</strong><br>
+                    Si dans un triangle, le carré du plus grand côté est égal à la somme des carrés des deux autres côtés, alors ce triangle est rectangle.
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Exemple : Le triangle de côtés 6, 8 et 10 est-il rectangle ?</div>
+                    <p style="margin-top: 10px;">
+                        Le plus grand côté est 10.<br>
+                        10² = 100<br>
+                        6² + 8² = 36 + 64 = 100<br>
+                        Comme 10² = 6² + 8², le triangle <strong>est rectangle</strong>.
+                    </p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Contre-exemple : Le triangle de côtés 4, 5 et 7 est-il rectangle ?</div>
+                    <p style="margin-top: 10px;">
+                        Le plus grand côté est 7.<br>
+                        7² = 49<br>
+                        4² + 5² = 16 + 25 = 41<br>
+                        Comme 49 ≠ 41, le triangle <strong>n'est pas rectangle</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 1 : Calculer l'hypoténuse</h2>
+
+                <div class="question">
+                    <strong>1.</strong> Triangle rectangle avec côtés de l'angle droit : 6 cm et 8 cm.<br>
+                    Hypoténuse = <input type="text" id="q1" placeholder="..." style="width: 80px;"> cm
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> Triangle rectangle avec côtés de l'angle droit : 5 cm et 12 cm.<br>
+                    Hypoténuse = <input type="text" id="q2" placeholder="..." style="width: 80px;"> cm
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> Triangle rectangle avec côtés de l'angle droit : 9 cm et 12 cm.<br>
+                    Hypoténuse = <input type="text" id="q3" placeholder="..." style="width: 80px;"> cm
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers()">Vérifier</button>
+                    <button onclick="resetExercise()">Recommencer</button>
+                </div>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 2 : Calculer un côté</h2>
+
+                <div class="question">
+                    <strong>1.</strong> Hypoténuse = 10 cm, un côté = 6 cm. L'autre côté = <input type="text" id="ex2q1" placeholder="..." style="width: 80px;"> cm
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> Hypoténuse = 17 cm, un côté = 8 cm. L'autre côté = <input type="text" id="ex2q2" placeholder="..." style="width: 80px;"> cm
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> Hypoténuse = 25 cm, un côté = 7 cm. L'autre côté = <input type="text" id="ex2q3" placeholder="..." style="width: 80px;"> cm
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers2()">Vérifier</button>
+                    <button onclick="resetExercise2()">Recommencer</button>
+                </div>
+
+                <div id="result2"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 3 : Triangle rectangle ou non ?</h2>
+
+                <div class="question">
+                    <strong>1.</strong> Triangle de côtés 5, 12, 13 :
+                    <select id="ex3q1">
+                        <option value="">Choisir...</option>
+                        <option value="oui">Rectangle</option>
+                        <option value="non">Non rectangle</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> Triangle de côtés 7, 8, 10 :
+                    <select id="ex3q2">
+                        <option value="">Choisir...</option>
+                        <option value="oui">Rectangle</option>
+                        <option value="non">Non rectangle</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> Triangle de côtés 8, 15, 17 :
+                    <select id="ex3q3">
+                        <option value="">Choisir...</option>
+                        <option value="oui">Rectangle</option>
+                        <option value="non">Non rectangle</option>
+                    </select>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers3()">Vérifier</button>
+                    <button onclick="resetExercise3()">Recommencer</button>
+                </div>
+
+                <div id="result3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers = { q1: '10', q2: '13', q3: '15' };
+        const answers2 = { ex2q1: '8', ex2q2: '15', ex2q3: '24' };
+        const answers3 = { ex3q1: 'oui', ex3q2: 'non', ex3q3: 'oui' };
+
+        function normalize(str) {
+            return str.toLowerCase().trim();
+        }
+
+        function checkAnswers() {
+            let score = 0;
+            for (let i = 1; i <= 3; i++) {
+                const input = document.getElementById('q' + i);
+                if (normalize(input.value) === answers['q' + i]) {
+                    score++;
+                    input.style.borderColor = '#28a745';
+                } else {
+                    input.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result', score, 3);
+        }
+
+        function checkAnswers2() {
+            let score = 0;
+            for (let i = 1; i <= 3; i++) {
+                const input = document.getElementById('ex2q' + i);
+                if (normalize(input.value) === answers2['ex2q' + i]) {
+                    score++;
+                    input.style.borderColor = '#28a745';
+                } else {
+                    input.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result2', score, 3);
+        }
+
+        function checkAnswers3() {
+            let score = 0;
+            for (let i = 1; i <= 3; i++) {
+                const select = document.getElementById('ex3q' + i);
+                if (select.value === answers3['ex3q' + i]) {
+                    score++;
+                    select.style.borderColor = '#28a745';
+                } else {
+                    select.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result3', score, 3);
+        }
+
+        function showResult(id, score, total) {
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById(id);
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Parfait ! ' + score + '/' + total;
+            } else if (percentage >= 50) {
+                resultDiv.className = 'result partial';
+                resultDiv.innerHTML = '👍 Bien ! ' + score + '/' + total;
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Révise la méthode !';
+            }
+        }
+
+        function resetExercise() {
+            for (let i = 1; i <= 3; i++) {
+                const input = document.getElementById('q' + i);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            }
+            document.getElementById('result').innerHTML = '';
+        }
+
+        function resetExercise2() {
+            for (let i = 1; i <= 3; i++) {
+                const input = document.getElementById('ex2q' + i);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            }
+            document.getElementById('result2').innerHTML = '';
+        }
+
+        function resetExercise3() {
+            for (let i = 1; i <= 3; i++) {
+                const select = document.getElementById('ex3q' + i);
+                select.value = '';
+                select.style.borderColor = '#ddd';
+            }
+            document.getElementById('result3').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

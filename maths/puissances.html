@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Puissances - Maths 4ème</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            padding: 20px;
+        }
+        h2 { color: #3498db; border-color: #3498db; }
+        h3 { color: #2980b9; }
+        button { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+        .formula {
+            background: #e8f4fc;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        .formula-main {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-home">
+        <a href="index.html">⬅ Maths</a>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+        <header class="bg-maths">
+            <h1>📊 Les Puissances</h1>
+            <p>Notation et calculs avec les puissances</p>
+        </header>
+
+        <div class="content">
+            <h2>1. Définition</h2>
+            <div class="section">
+                <p>Une <strong>puissance</strong> est une écriture simplifiée d'un produit de facteurs identiques.</p>
+
+                <div class="formula">
+                    <span class="formula-main">aⁿ = a × a × a × ... × a</span> (n fois)
+                </div>
+
+                <ul>
+                    <li><strong>a</strong> est la <strong>base</strong></li>
+                    <li><strong>n</strong> est l'<strong>exposant</strong></li>
+                </ul>
+
+                <div class="example">
+                    <div class="example-main">2³ = 2 × 2 × 2 = 8</div>
+                    <div class="example-main">5² = 5 × 5 = 25</div>
+                    <div class="example-main">10⁴ = 10 × 10 × 10 × 10 = 10 000</div>
+                </div>
+            </div>
+
+            <h2>2. Puissances de 10</h2>
+            <div class="section">
+                <table>
+                    <tr><th>Puissance</th><th>Valeur</th><th>Nom</th></tr>
+                    <tr><td>10⁶</td><td>1 000 000</td><td>Million</td></tr>
+                    <tr><td>10³</td><td>1 000</td><td>Mille</td></tr>
+                    <tr><td>10²</td><td>100</td><td>Cent</td></tr>
+                    <tr><td>10¹</td><td>10</td><td>Dix</td></tr>
+                    <tr><td>10⁰</td><td>1</td><td>Un</td></tr>
+                    <tr><td>10⁻¹</td><td>0,1</td><td>Dixième</td></tr>
+                    <tr><td>10⁻²</td><td>0,01</td><td>Centième</td></tr>
+                    <tr><td>10⁻³</td><td>0,001</td><td>Millième</td></tr>
+                </table>
+
+                <div class="important">
+                    <strong>💡 Astuce :</strong> L'exposant indique le nombre de zéros après le 1 (si positif) ou le nombre de chiffres après la virgule (si négatif).
+                </div>
+            </div>
+
+            <h2>3. Exposant nul et exposant 1</h2>
+            <div class="section">
+                <div class="formula">
+                    <span class="formula-main">a⁰ = 1</span> (pour tout a ≠ 0)<br><br>
+                    <span class="formula-main">a¹ = a</span>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">5⁰ = 1 ; 123⁰ = 1 ; (-7)⁰ = 1</div>
+                </div>
+            </div>
+
+            <h2>4. Exposant négatif</h2>
+            <div class="section">
+                <div class="formula">
+                    <span class="formula-main">a⁻ⁿ = 1/aⁿ</span>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">2⁻³ = 1/2³ = 1/8</div>
+                    <div class="example-main">10⁻² = 1/10² = 1/100 = 0,01</div>
+                </div>
+            </div>
+
+            <h2>5. Les règles de calcul</h2>
+            <div class="section">
+                <h3>Produit de puissances de même base</h3>
+                <div class="formula">
+                    <span class="formula-main">aᵐ × aⁿ = aᵐ⁺ⁿ</span>
+                </div>
+                <div class="example">
+                    <div class="example-main">2³ × 2⁴ = 2³⁺⁴ = 2⁷ = 128</div>
+                </div>
+
+                <h3>Quotient de puissances de même base</h3>
+                <div class="formula">
+                    <span class="formula-main">aᵐ ÷ aⁿ = aᵐ⁻ⁿ</span>
+                </div>
+                <div class="example">
+                    <div class="example-main">5⁶ ÷ 5² = 5⁶⁻² = 5⁴ = 625</div>
+                </div>
+
+                <h3>Puissance d'une puissance</h3>
+                <div class="formula">
+                    <span class="formula-main">(aᵐ)ⁿ = aᵐˣⁿ</span>
+                </div>
+                <div class="example">
+                    <div class="example-main">(2³)² = 2³ˣ² = 2⁶ = 64</div>
+                </div>
+
+                <h3>Puissance d'un produit</h3>
+                <div class="formula">
+                    <span class="formula-main">(a × b)ⁿ = aⁿ × bⁿ</span>
+                </div>
+                <div class="example">
+                    <div class="example-main">(2 × 3)² = 2² × 3² = 4 × 9 = 36</div>
+                </div>
+            </div>
+
+            <h2>6. Écriture scientifique</h2>
+            <div class="section">
+                <p>Un nombre est en <strong>écriture scientifique</strong> s'il est de la forme :</p>
+                <div class="formula">
+                    <span class="formula-main">a × 10ⁿ</span><br>
+                    où 1 ≤ a < 10 et n est un entier
+                </div>
+
+                <div class="example">
+                    <div class="example-main">345 000 = 3,45 × 10⁵</div>
+                    <div class="example-main">0,0067 = 6,7 × 10⁻³</div>
+                </div>
+
+                <div class="important">
+                    <strong>⚠️ Attention :</strong> Le premier nombre doit avoir un seul chiffre avant la virgule (entre 1 et 9).
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 1 : Calculer</h2>
+
+                <div class="question">
+                    <strong>1.</strong> 2⁴ = <input type="text" id="q1" placeholder="..." style="width: 80px;">
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> 3³ = <input type="text" id="q2" placeholder="..." style="width: 80px;">
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> 10⁵ = <input type="text" id="q3" placeholder="..." style="width: 120px;">
+                </div>
+
+                <div class="question">
+                    <strong>4.</strong> 7⁰ = <input type="text" id="q4" placeholder="..." style="width: 80px;">
+                </div>
+
+                <div class="question">
+                    <strong>5.</strong> 10⁻² = <input type="text" id="q5" placeholder="..." style="width: 80px;">
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers()">Vérifier</button>
+                    <button onclick="resetExercise()">Recommencer</button>
+                </div>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 2 : Simplifier (donner le résultat sous forme de puissance)</h2>
+
+                <div class="question">
+                    <strong>1.</strong> 2³ × 2⁵ = 2<sup><input type="text" id="ex2q1" placeholder="?" style="width: 40px;"></sup>
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> 10⁷ ÷ 10³ = 10<sup><input type="text" id="ex2q2" placeholder="?" style="width: 40px;"></sup>
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> (5²)³ = 5<sup><input type="text" id="ex2q3" placeholder="?" style="width: 40px;"></sup>
+                </div>
+
+                <div class="question">
+                    <strong>4.</strong> 3⁴ × 3⁻² = 3<sup><input type="text" id="ex2q4" placeholder="?" style="width: 40px;"></sup>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers2()">Vérifier</button>
+                    <button onclick="resetExercise2()">Recommencer</button>
+                </div>
+
+                <div id="result2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers = {
+            q1: '16',
+            q2: '27',
+            q3: '100000',
+            q4: '1',
+            q5: ['0.01', '0,01']
+        };
+
+        const answers2 = {
+            ex2q1: '8',
+            ex2q2: '4',
+            ex2q3: '6',
+            ex2q4: '2'
+        };
+
+        function normalize(str) {
+            return str.toLowerCase().trim();
+        }
+
+        function checkAnswers() {
+            let score = 0;
+            for (let i = 1; i <= 5; i++) {
+                const input = document.getElementById('q' + i);
+                const userAnswer = normalize(input.value);
+                const correct = answers['q' + i];
+                const isCorrect = Array.isArray(correct)
+                    ? correct.includes(userAnswer)
+                    : userAnswer === correct;
+                if (isCorrect) {
+                    score++;
+                    input.style.borderColor = '#28a745';
+                } else {
+                    input.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result', score, 5);
+        }
+
+        function checkAnswers2() {
+            let score = 0;
+            for (let i = 1; i <= 4; i++) {
+                const input = document.getElementById('ex2q' + i);
+                if (normalize(input.value) === answers2['ex2q' + i]) {
+                    score++;
+                    input.style.borderColor = '#28a745';
+                } else {
+                    input.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result2', score, 4);
+        }
+
+        function showResult(id, score, total) {
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById(id);
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Parfait ! ' + score + '/' + total;
+            } else if (percentage >= 50) {
+                resultDiv.className = 'result partial';
+                resultDiv.innerHTML = '👍 Bien ! ' + score + '/' + total;
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Révise les règles !';
+            }
+        }
+
+        function resetExercise() {
+            for (let i = 1; i <= 5; i++) {
+                const input = document.getElementById('q' + i);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            }
+            document.getElementById('result').innerHTML = '';
+        }
+
+        function resetExercise2() {
+            for (let i = 1; i <= 4; i++) {
+                const input = document.getElementById('ex2q' + i);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            }
+            document.getElementById('result2').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Littéral - Maths 4ème</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            padding: 20px;
+        }
+        h2 { color: #3498db; border-color: #3498db; }
+        h3 { color: #2980b9; }
+        button { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+        .formula {
+            background: #e8f4fc;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        .formula-main {
+            color: #2980b9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-home">
+        <a href="index.html">⬅ Maths</a>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+        <header class="bg-maths">
+            <h1>🔤 Calcul Littéral</h1>
+            <p>Développer, factoriser et réduire des expressions</p>
+        </header>
+
+        <div class="content">
+            <h2>1. Vocabulaire</h2>
+            <div class="section">
+                <ul>
+                    <li><strong>Expression littérale</strong> : expression contenant des lettres (variables)</li>
+                    <li><strong>Développer</strong> : transformer un produit en somme</li>
+                    <li><strong>Factoriser</strong> : transformer une somme en produit</li>
+                    <li><strong>Réduire</strong> : regrouper les termes semblables</li>
+                </ul>
+            </div>
+
+            <h2>2. La simple distributivité</h2>
+            <div class="section">
+                <div class="formula">
+                    <span class="formula-main">k(a + b) = ka + kb</span><br><br>
+                    <span class="formula-main">k(a - b) = ka - kb</span>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Développer : 3(x + 5)</div>
+                    <p>3(x + 5) = 3 × x + 3 × 5 = <strong>3x + 15</strong></p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Développer : 2(4x - 3)</div>
+                    <p>2(4x - 3) = 2 × 4x - 2 × 3 = <strong>8x - 6</strong></p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Développer : -5(2x + 1)</div>
+                    <p>-5(2x + 1) = -5 × 2x + (-5) × 1 = <strong>-10x - 5</strong></p>
+                </div>
+
+                <div class="important">
+                    <strong>⚠️ Attention aux signes !</strong><br>
+                    Quand on multiplie par un nombre négatif, les signes changent.
+                </div>
+            </div>
+
+            <h2>3. La double distributivité</h2>
+            <div class="section">
+                <div class="formula">
+                    <span class="formula-main">(a + b)(c + d) = ac + ad + bc + bd</span>
+                </div>
+
+                <p>On multiplie chaque terme de la première parenthèse par chaque terme de la seconde.</p>
+
+                <div class="example">
+                    <div class="example-main">Développer : (x + 2)(x + 3)</div>
+                    <p>
+                        (x + 2)(x + 3)<br>
+                        = x × x + x × 3 + 2 × x + 2 × 3<br>
+                        = x² + 3x + 2x + 6<br>
+                        = <strong>x² + 5x + 6</strong>
+                    </p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Développer : (2x - 1)(x + 4)</div>
+                    <p>
+                        (2x - 1)(x + 4)<br>
+                        = 2x × x + 2x × 4 + (-1) × x + (-1) × 4<br>
+                        = 2x² + 8x - x - 4<br>
+                        = <strong>2x² + 7x - 4</strong>
+                    </p>
+                </div>
+            </div>
+
+            <h2>4. Les identités remarquables</h2>
+            <div class="section">
+                <p>Ces formules sont à connaître par cœur !</p>
+
+                <div class="formula">
+                    <span class="formula-main">(a + b)² = a² + 2ab + b²</span>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">(x + 3)² = x² + 2×x×3 + 3² = x² + 6x + 9</div>
+                </div>
+
+                <div class="formula">
+                    <span class="formula-main">(a - b)² = a² - 2ab + b²</span>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">(x - 5)² = x² - 2×x×5 + 5² = x² - 10x + 25</div>
+                </div>
+
+                <div class="formula">
+                    <span class="formula-main">(a + b)(a - b) = a² - b²</span>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">(x + 4)(x - 4) = x² - 4² = x² - 16</div>
+                </div>
+            </div>
+
+            <h2>5. Factoriser</h2>
+            <div class="section">
+                <p>Factoriser, c'est l'opération inverse de développer : on cherche un <strong>facteur commun</strong>.</p>
+
+                <div class="example">
+                    <div class="example-main">Factoriser : 6x + 12</div>
+                    <p>
+                        Facteur commun : 6<br>
+                        6x + 12 = <strong>6(x + 2)</strong>
+                    </p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Factoriser : 4x² - 8x</div>
+                    <p>
+                        Facteur commun : 4x<br>
+                        4x² - 8x = <strong>4x(x - 2)</strong>
+                    </p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Factoriser : x² - 9 (différence de carrés)</div>
+                    <p>
+                        x² - 9 = x² - 3²<br>
+                        = <strong>(x + 3)(x - 3)</strong>
+                    </p>
+                </div>
+
+                <div class="important">
+                    <strong>💡 Astuce :</strong><br>
+                    Pour factoriser, cherche toujours le plus grand facteur commun à tous les termes.
+                </div>
+            </div>
+
+            <h2>6. Réduire une expression</h2>
+            <div class="section">
+                <p>On regroupe les termes semblables (ceux qui ont la même partie littérale).</p>
+
+                <div class="example">
+                    <div class="example-main">Réduire : 5x + 3 + 2x - 7</div>
+                    <p>
+                        = (5x + 2x) + (3 - 7)<br>
+                        = <strong>7x - 4</strong>
+                    </p>
+                </div>
+
+                <div class="example">
+                    <div class="example-main">Réduire : 3x² + 4x - x² + 2x - 5</div>
+                    <p>
+                        = (3x² - x²) + (4x + 2x) - 5<br>
+                        = <strong>2x² + 6x - 5</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 1 : Développer</h2>
+                <p style="margin-bottom: 15px;">Développe et réduis les expressions suivantes.</p>
+
+                <div class="question">
+                    <strong>1.</strong> 4(x + 3) = <input type="text" id="q1" placeholder="..." style="width: 150px;">
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> -2(3x - 5) = <input type="text" id="q2" placeholder="..." style="width: 150px;">
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> (x + 2)(x + 5) = <input type="text" id="q3" placeholder="..." style="width: 180px;">
+                </div>
+
+                <div class="question">
+                    <strong>4.</strong> (x + 4)² = <input type="text" id="q4" placeholder="..." style="width: 180px;">
+                </div>
+
+                <div class="question">
+                    <strong>5.</strong> (x - 3)(x + 3) = <input type="text" id="q5" placeholder="..." style="width: 150px;">
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers()">Vérifier</button>
+                    <button onclick="resetExercise()">Recommencer</button>
+                </div>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="exercise" style="margin-top: 30px;">
+                <h2 style="color: #333; margin-top: 0;">✏️ Exercice 2 : Factoriser</h2>
+
+                <div class="question">
+                    <strong>1.</strong> 5x + 10 = <input type="text" id="ex2q1" placeholder="..." style="width: 150px;">
+                </div>
+
+                <div class="question">
+                    <strong>2.</strong> 3x² - 6x = <input type="text" id="ex2q2" placeholder="..." style="width: 150px;">
+                </div>
+
+                <div class="question">
+                    <strong>3.</strong> x² - 25 = <input type="text" id="ex2q3" placeholder="..." style="width: 180px;">
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button onclick="checkAnswers2()">Vérifier</button>
+                    <button onclick="resetExercise2()">Recommencer</button>
+                </div>
+
+                <div id="result2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers = {
+            q1: ['4x + 12', '4x+12'],
+            q2: ['-6x + 10', '-6x+10'],
+            q3: ['x² + 7x + 10', 'x²+7x+10', 'x^2 + 7x + 10', 'x^2+7x+10'],
+            q4: ['x² + 8x + 16', 'x²+8x+16', 'x^2 + 8x + 16', 'x^2+8x+16'],
+            q5: ['x² - 9', 'x²-9', 'x^2 - 9', 'x^2-9']
+        };
+
+        const answers2 = {
+            ex2q1: ['5(x + 2)', '5(x+2)'],
+            ex2q2: ['3x(x - 2)', '3x(x-2)'],
+            ex2q3: ['(x + 5)(x - 5)', '(x+5)(x-5)', '(x - 5)(x + 5)', '(x-5)(x+5)']
+        };
+
+        function normalize(str) {
+            return str.toLowerCase().trim().replace(/\s+/g, '');
+        }
+
+        function checkAnswers() {
+            let score = 0;
+            for (let i = 1; i <= 5; i++) {
+                const input = document.getElementById('q' + i);
+                const userAnswer = normalize(input.value);
+                const correctAnswers = answers['q' + i].map(a => normalize(a));
+                if (correctAnswers.includes(userAnswer)) {
+                    score++;
+                    input.style.borderColor = '#28a745';
+                } else {
+                    input.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result', score, 5);
+        }
+
+        function checkAnswers2() {
+            let score = 0;
+            for (let i = 1; i <= 3; i++) {
+                const input = document.getElementById('ex2q' + i);
+                const userAnswer = normalize(input.value);
+                const correctAnswers = answers2['ex2q' + i].map(a => normalize(a));
+                if (correctAnswers.includes(userAnswer)) {
+                    score++;
+                    input.style.borderColor = '#28a745';
+                } else {
+                    input.style.borderColor = '#dc3545';
+                }
+            }
+            showResult('result2', score, 3);
+        }
+
+        function showResult(id, score, total) {
+            const percentage = (score / total) * 100;
+            const resultDiv = document.getElementById(id);
+            if (percentage === 100) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = '🎉 Parfait ! ' + score + '/' + total;
+            } else if (percentage >= 50) {
+                resultDiv.className = 'result partial';
+                resultDiv.innerHTML = '👍 Bien ! ' + score + '/' + total;
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = '📚 ' + score + '/' + total + ' - Révise les formules !';
+            }
+        }
+
+        function resetExercise() {
+            for (let i = 1; i <= 5; i++) {
+                const input = document.getElementById('q' + i);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            }
+            document.getElementById('result').innerHTML = '';
+        }
+
+        function resetExercise2() {
+            for (let i = 1; i <= 3; i++) {
+                const input = document.getElementById('ex2q' + i);
+                input.value = '';
+                input.style.borderColor = '#ddd';
+            }
+            document.getElementById('result2').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

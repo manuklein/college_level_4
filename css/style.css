@@ -17,6 +17,8 @@ body {
 .bg-anglais { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
 .bg-espagnol { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
 .bg-svt { background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%); }
+.bg-maths { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.bg-histoire { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
 
 .container {
     max-width: 900px;
@@ -138,6 +140,8 @@ button:hover {
 .btn-anglais { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
 .btn-espagnol { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
 .btn-svt { background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%); }
+.btn-maths { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.btn-histoire { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
 .btn-neutral { background: linear-gradient(135deg, #6c757d 0%, #495057 100%); }
 
 .result {
@@ -280,6 +284,8 @@ h3 {
 .notions-list.anglais a:hover { border-color: #667eea; color: #667eea; }
 .notions-list.espagnol a:hover { border-color: #f39c12; color: #f39c12; }
 .notions-list.svt a:hover { border-color: #27ae60; color: #27ae60; }
+.notions-list.maths a:hover { border-color: #3498db; color: #3498db; }
+.notions-list.histoire a:hover { border-color: #9b59b6; color: #9b59b6; }
 
 /* Responsive */
 @media (max-width: 768px) {
